@@ -11,7 +11,16 @@ $(function() {
   });
 });
 
+// Lightbox Script
+
 $(document).on('click', '[data-toggle="lightbox"]', function (event) {
   event.preventDefault();
   $(this).ekkoLightbox();
+});
+
+// Slick Slider Script
+$('.slider').slick({
+  infinite: true,
+  slideToShow:1,
+  slideToScroll:1
 });
